@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<odoo>
+<!--action menu-->
+     <record id="estate_property" model="ir.actions.act_window">
+        <field name="name">Real Estate</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="context">{'search_default_availablefilter':True}</field>
+        <field name="help" type="html">
+            <p>Create your estates here</p>
+        </field>
+    </record>
+    <record id="estate_type" model="ir.actions.act_window">
+        <field name="name">Real Estate</field>
+        <field name="res_model">estate.type</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="help" type="html">
+            <p>List of types</p>
+        </field>
+    </record>
+
+    <record id="estate_tag" model="ir.actions.act_window">
+        <field name="name">Real Estate</field>
+        <field name="res_model">estate.tag</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="help" type="html">
+            <p>Liste of Tags</p>
+        </field>
+    </record>
+
+    <record id="estate_client" model="ir.actions.act_window">
+        <field name="name">Real Estate</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <field name="partner_id"/>
+            <field name="estate_tag"/>
+        </field>
+    </record>
+    
+    <record id="estate_user" model="ir.actions.act_window">
+        <field name="name">Real Estate</field>
+        <field name="res_model">res.users</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+<!--menu item show-->
+    <menuitem id="estate_menu_root" name="Real Estate" web_icon = "estate,static/description/icon.png">
+
+        <menuitem id="advertisement" name="Advertisement">
+            <menuitem id="Liste_of_estates" name="properties" action="estate_property"/>
+        </menuitem>
+
+        <menuitem id="settings" name="Settings">
+            <menuitem id="Liste_of_types" name="Estates types" action="estate_type"/>
+            <menuitem id="Liste_of_tags" name="Estates tag" action="estate_tag"/>
+        </menuitem>
+
+        <menuitem id="estate_users" name="Estate Users">
+            <menuitem id="Liste_of_clients" name="Estates Clients" action="estate_client"/>
+            <menuitem id="Liste_of_User" name="Estate User" action="estate_user"/>
+        </menuitem>
+
+    </menuitem>
+</odoo>
