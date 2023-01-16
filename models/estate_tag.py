@@ -1,4 +1,5 @@
 from odoo import fields,models
+
 class Estate_Tags(models.Model):
     _name="estate.tag"
     _description="All estate tags"

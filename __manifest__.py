@@ -3,7 +3,7 @@
     'version': '1.0',
     'author': 'HTCompass',
     'category': 'Real Estate/Brokerage',
-    'summary': 'This is summary',
+    'summary': 'Create your estates here, and get the track of them',
     'description': "This is description",
     'depends':['base',],
     'data' : [

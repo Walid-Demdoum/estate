@@ -8,8 +8,7 @@
         <field name="arch" type="xml">
                 <notebook position="inside">
                     <page name="estate_properties" string="Real Estate Properties">
-                        <field name="property_u_ids">
-                        </field>
+                        <field name="property_u_ids"/>
                     </page>
                 </notebook>
         </field>

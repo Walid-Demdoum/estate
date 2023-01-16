@@ -21,4 +21,6 @@ class Estate_Type(models.Model):
             record.offer_count = len(record.offer_ids) if record.offer_ids else 0.0
 
     def action_offers(self):
-        return None
+        res = self.env.ref("estate_offers_action").read()[0]
+        res["domain"] = [("id", "in", self.offer_ids.ids)]
+        return res
