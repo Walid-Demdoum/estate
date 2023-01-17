@@ -6,4 +6,4 @@ user_access_estate_type,user.access.estate.type,model_estate_type,estate_group_u
 access_estate_offer,access.estate.offer,model_estate_offer,estate_group_manager,1,1,1,1
 user_access_estate_offer,user.access.estate.offer,model_estate_offer,estate_group_user,1,1,1,1
 access_estate_tag,access.estate.tag,model_estate_tag,estate_group_manager,1,1,1,1
-user_access_estate_tag,user.access.estate.tag,model_estate_tag,estate_group_user,1,0,0,0
+user_access_estate_tag,user.access.estate.tag,model_estate_tag,estate_group_user,1,0,0,1
