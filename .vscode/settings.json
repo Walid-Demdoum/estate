@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "/bin/python3",
-    "python.linting.pylintEnabled": false,
-    "python.linting.enabled": false,
-    "python.linting.pycodestyleEnabled": true
-}
